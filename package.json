@@ -1,0 +1,27 @@
+{
+  "name": "react-prop-optimizer",
+  "version": "1.0.0",
+  "description": "Automatically analyzes React component prop usage patterns and generates optimized prop drilling alternatives using Context API or state management libraries.",
+  "main": "scripts/main.js",
+  "bin": {
+    "react-prop-optimizer": "scripts/main.js"
+  },
+  "scripts": {
+    "start": "node scripts/main.js",
+    "test": "node --test scripts/*.test.js"
+  },
+  "keywords": [
+    "react",
+    "prop-drilling",
+    "context-api",
+    "state-management",
+    "optimization"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "@babel/generator": "^7.24.0",
+    "@babel/types": "^7.24.0"
+  }
+}
