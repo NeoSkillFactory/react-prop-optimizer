@@ -2,20 +2,41 @@
 
 ![Audit](https://img.shields.io/badge/audit%3A%20PASS-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-orange)
 
-> A skill that automatically analyzes React component prop usage patterns and generates optimized prop drilling alternatives using Context API or state management
+> Automatically analyzes React component prop usage patterns and generates optimized prop drilling alternatives using Context API or state management libraries.
 
-I don't have access to previous context about what you were working on. Could you please tell me what task you'd like me to continue with?
+## Features
 
-## OpenClaw Marketplace
+- Analyze React component files to detect prop drilling patterns and usage frequency
+- Generate Context API implementations with proper Provider and Consumer components
+- Create alternative solutions using popular state management libraries (Redux, Zustand, Jotai)
+- Optimize prop drilling by identifying unnecessary intermediate components
+- Output optimized component code with TypeScript interfaces and proper typing
+- Validate generated solutions against React best practices
 
-This skill is available on [ClawHub](https://clawhub.ai) — the OpenClaw skill marketplace.
-Install it in any OpenClaw agent workspace with:
+## Usage
 
 ```bash
-clawhub install react-prop-optimizer
+# Analyze a single component file
+node scripts/main.js analyze --file path/to/Component.jsx
+
+# Analyze a directory of components
+node scripts/main.js analyze --dir path/to/components/
+
+# Generate Context API alternative
+node scripts/main.js generate --file path/to/Component.jsx --strategy context
+
+# Generate state management alternative (redux, zustand, jotai)
+node scripts/main.js generate --file path/to/Component.jsx --strategy zustand
+
+# Full pipeline: analyze + generate + validate
+node scripts/main.js optimize --file path/to/Component.jsx
 ```
 
-**Recommended price when commercial:** $19.99 USD
+## GitHub
+
+Source code: [github.com/NeoSkillFactory/react-prop-optimizer](https://github.com/NeoSkillFactory/react-prop-optimizer)
+
+**Price suggestion:** $19.99 USD
 
 ## License
 
