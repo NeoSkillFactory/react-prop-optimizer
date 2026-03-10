@@ -36,8 +36,6 @@ node scripts/main.js optimize --file path/to/Component.jsx
 
 Source code: [github.com/NeoSkillFactory/react-prop-optimizer](https://github.com/NeoSkillFactory/react-prop-optimizer)
 
-**Price suggestion:** $19.99 USD
-
 ## License
 
 MIT © NeoSkillFactory
