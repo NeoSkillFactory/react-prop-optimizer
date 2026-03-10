@@ -127,7 +127,7 @@ function generateZustandStore(storeName, props, typescript) {
     .join("\n");
 
   const interfaceBlock = typescript
-    ? `interface ${name}Store {\n${stateFields}\n${actionFields}\n}\n\n`
+    ? `export interface ${name}Store {\n${stateFields}\n${actionFields}\n}\n\n`
     : "";
 
   const typeAnnotation = typescript ? `<${name}Store>` : "";
